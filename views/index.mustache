@@ -1,0 +1,74 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ketan Jangid</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="left">
+      <a href="#projects">PROJECTS</a>
+      <a href="#blogs">BLOG</a>
+    </div>
+    <a href="./" class="logo">KETAN</a>
+    <div class="right">
+      <a href="#contact">CONTACT</a>
+      <a href="#about">ABOUT</a>
+    </div>
+  </nav>
+  
+  <div class="home">
+    <div>
+      <header>KETAN JANGID</header>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, eaque accusamus. Placeat ea doloremque repudiandae maxime fugiat voluptate neque reiciendis molestiae, nisi ipsam porro voluptatum quae est, deleniti voluptas consectetur ad impedit, repellendus ratione perferendis delectus! Natus voluptatem cumque ipsa.</p>
+    </div>
+  </div>
+
+  <div class="about" id="about">
+    <img src="./images/Pink-purple-color.jpg" alt="about">
+    <div class="txt">
+      <header>About</header>
+      <h1>Web Developer</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, explicabo! Magni voluptatibus quidem nulla soluta doloribus delectus sunt est quo quam nam itaque dolorem, sint explicabo possimus nihil quis labore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat odit dolore ratione? Animi nostrum tenetur molestiae quos? Minus, maxime reprehenderit!3</p>
+      <button>Hire me</button>
+    </div>
+  </div>
+
+  <div class="projects" id="projects">
+    <header>PROJECTS</header>
+    {{#projects}}
+    <div class="project">
+      <img src="{{image}}" alt="project">
+      <h1>{{title}}</h1>
+      <button>VIEW</button>
+    </div>
+    {{/projects}}
+  </div>
+
+  <div class="blogs" id="blogs">
+    <header>BLOGS</header>
+    {{#blogs}}
+    <div class="blog">
+      <img src="{{image}}" alt="blog">
+      <h1>{{title}}</h1>
+      <p>{{disc}}</p>
+      <button>READ</button>
+    </div>
+    {{/blogs}}
+  </div>
+
+  <div class="contact" id="contact">
+    <header>Contact</header>
+    <form method="POST" action="/submit">
+      <input type="text" placeholder="Enter Your Name" name="name" />
+      <input type="email" placeholder="Enter Your Email" name="email" />
+      <textarea name="message" placeholder="Enter Your Message..." cols="30" rows="10"></textarea>
+      <input type="submit" value="Send">
+    </form>
+  </div>
+</body>
+</html>

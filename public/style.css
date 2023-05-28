@@ -1,0 +1,363 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  /* Global Styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Navigation */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    color: #fff;
+    padding: 10px 20px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    background: #323232;
+    padding: 5px;
+    margin: 5px;
+  }
+  
+  /* Home Section */
+  .home {
+    /* background-color: #f9f9f9; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    height: 100vh;
+    background: url('./images/Hero-background.jpg');
+    text-align: center;
+  }
+  .home div{
+    background: #fff;
+    padding: 10px;
+    box-shadow: 0em 0em 0.4em #00000030;
+    border-radius: 10px;
+  }
+  .home header {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .home p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  /* About Section */
+  .about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 40px 20px;
+  }
+  
+  .about img {
+    max-width: 50%;
+    border-radius: 8px;
+  }
+  
+  .about .txt {
+    flex-grow: 1;
+    margin-left: 20px;
+  }
+  
+  .about header {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .about h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .about p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .about button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #222;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .about button:hover {
+    background-color: #333;
+  }
+  
+  /* Projects Section */
+  .projects {
+    display: flex;
+    flex-direction: wrap;
+    overflow-x: scroll;
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+  }
+  
+  .projects header {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .project img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .project h1 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+  
+  .project button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #222;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .project button:hover {
+    background-color: #333;
+  }
+  
+  /* Blogs Section */
+  .blogs {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    overflow-x: scroll;
+  }
+  
+  .blogs header {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .blog img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .blog h1 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+  
+  .blog p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .blog button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #222;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .blog button:hover {
+    background-color: #333;
+  }
+  
+  /* Contact Section */
+  .contact {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .contact header {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .contact form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .contact input,
+  .contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .contact input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #222;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .contact input[type="submit"]:hover {
+    background-color: #333;
+  }
+  
+/* Responsive Styles */
+
+/* Mobile */
+@media (max-width: 767px) {
+    .container {
+      padding: 10px;
+    }
+  
+    nav {
+      flex-direction: column;
+      padding: 10px;
+    }
+    nav div{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+  
+    .logo {
+      font-size: 1.2rem;
+    }
+  
+    .home header {
+      font-size: 1.8rem;
+    }
+  
+    .about {
+      flex-direction: column;
+    }
+  
+    .about img {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .about .txt {
+      margin-left: 0;
+    }
+  
+    .about header {
+      font-size: 1.8rem;
+    }
+  
+    .about h1 {
+      font-size: 1.6rem;
+    }
+  
+    .about p {
+      font-size: 1rem;
+    }
+  
+    .about button,
+    .project button,
+    .blog button,
+    .contact input[type="submit"] {
+      font-size: 1rem;
+      padding: 8px 16px;
+    }
+  }
+  
+  /* Tablet */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .container {
+      padding: 15px;
+    }
+  
+    .home header {
+      font-size: 1.6rem;
+    }
+  
+    .about header {
+      font-size: 1.6rem;
+    }
+  
+    .about h1 {
+      font-size: 1.4rem;
+    }
+  
+    .about p {
+      font-size: 1.1rem;
+    }
+  
+    .about button,
+    .project button,
+    .blog button,
+    .contact input[type="submit"] {
+      font-size: 1.1rem;
+      padding: 8px 16px;
+    }
+  }
