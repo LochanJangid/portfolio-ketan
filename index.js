@@ -15,7 +15,7 @@ app.use(express.urlencoded({ extended: true }));
 app.get('/', async (req, res) => {
   try {
     const client = await MongoClient.connect(
-      'mongodb+srv://lochanjangidcoder:ketan_jangid_database@portfolio.way3kon.mongodb.net/',
+      'mongodb+srv://lochanjangidcoder:*********@portfolio.way3kon.mongodb.net/',
       { useNewUrlParser: true, useUnifiedTopology: true }
     );
 
@@ -51,7 +51,7 @@ app.get('/', async (req, res) => {
 app.post('/submit', async (req, res) => {
   try {
     const client = await MongoClient.connect(
-      'mongodb+srv://lochanjangidcoder:ketan_jangid_database@portfolio.way3kon.mongodb.net/',
+      'mongodb+srv://lochanjangidcoder:********@portfolio.way3kon.mongodb.net/',
       { useNewUrlParser: true, useUnifiedTopology: true }
     );
 
